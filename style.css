@@ -30,21 +30,24 @@
     align-items: center;
 }
 .photo-name{
-    width: 19vw;
-    height: 10vh;
+    width: 20vw;
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center; 
 }
 .photo-profile{
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
-    min-width: 70px;
-    min-height: 70px;
     overflow: hidden;
     border-radius: 50%;
-    margin-right: 20px;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+.photo-profile:hover{
+	transform: rotateY(180deg);
 }
 .name-profile{
     width: 260px;
@@ -83,7 +86,7 @@
     align-items: center;
 }
 .projects{
-    width: 135px;
+    width: 7vw;
     height: 75px;
     display: flex;
     flex-direction: column;
@@ -96,7 +99,7 @@
     transition: all 1s;
 }
 .stars{
-    width: 135px;
+    width: 7vw;
     height: 75px;
     display: flex;
     flex-direction: column;
@@ -109,7 +112,7 @@
     transition: all 1s;
 }
 .followers{
-    width: 135px;
+    width: 7vw;
     height: 75px;
     display: flex;
     flex-direction: column;
@@ -135,4 +138,28 @@
     color: white;
     opacity: 0.9;
     text-shadow: 0px 4px 5px #000;
+}
+@media (max-width:1240px) {
+    .card-profile {
+        width: 60vw;
+        height: 80vh;
+    }
+    .photo-name {
+        width: 32vw;
+    }
+    .box-status {
+        width: 100%;
+        height: 40vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .projects {
+        width: 90%;
+    }
+    .stars {
+        width: 90%;
+    }
+    .followers {
+        width: 90%;
+    }
 }
