@@ -30,7 +30,7 @@
     align-items: center;
 }
 .photo-name{
-    width: 20vw;
+    width: 375px;
     height: 12vh;
     display: flex;
     justify-content: space-between;
@@ -145,7 +145,7 @@
         height: 80vh;
     }
     .photo-name {
-        width: 32vw;
+        width: 380px;
     }
     .box-status {
         width: 100%;
@@ -161,5 +161,32 @@
     }
     .followers {
         width: 90%;
+    }
+}
+@media (max-width:820px) {
+    .card-profile {
+        width: 90vw;
+        height: 90vh;
+    }
+}
+@media (max-width:540px) {
+    .box-id {
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .photo-name {
+        flex-direction: column;
+        justify-content: center;
+        width:100%;
+        height: 17vh;
+    }
+    .name-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
